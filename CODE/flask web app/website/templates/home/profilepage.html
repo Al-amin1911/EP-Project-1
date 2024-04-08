@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}View Profile{% endblock %}
+
+{% block body %}
+<div id="mainwrap">
+    <img src='../static/img/Profile.png' id='avatar'>
+    <p id="cname">{{current_user.first_name}} {{current_user.last_name}}</p>
+    <br>
+    <div><span id="mail"><i class="fa fa-envelope"><a href="mailto:{{current.user.email}}"></a></i></span></div>
+    <br>
+    <div><span id="role"><i class="fa fa-vcard-o"></i>{{current_user.role}}</span></div>
+</div>
+{% endblock %}
+```
+
+```html
